@@ -1,0 +1,69 @@
+{
+  "name": "reactNativeHDwallet",
+  "version": "0.0.1",
+  "main": "./src/HDWallet.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "postinstall": "./scripts/postinstall.sh",
+    "test": "jest"
+  },
+  "keywords": [
+    "react-native",
+    "wallet",
+    "bip39",
+    "hdkey",
+    "hdwallet",
+    "react-native-hdwallet",
+    "react-native-wallet",
+    "reactNativeHDwallet"
+  ],
+  "dependencies": {
+    "assert": "^1.4.1",
+    "bn.js": "^4.11.8",
+    "events": "^1.1.1",
+    "hdkey": "^1.0.0",
+    "keccak": "^1.4.0",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-crypto": "^2.1.2",
+    "react-native-keyboard-aware-scroll-view": "^0.5.0",
+    "react-native-randombytes": "^3.2.0",
+    "readable-stream": "^1.0.33",
+    "secp256k1": "^3.5.0",
+    "stream-browserify": "^1.0.0",
+    "string_decoder": "^0.10.31",
+    "strip-hex-prefix": "^1.0.0",
+    "unorm": "^1.4.1",
+    "vm-browserify": "0.0.4"
+  },
+  "devDependencies": {
+    "babel-jest": "23.0.1",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "23.0.1",
+    "react-test-renderer": "16.3.1",
+    "rn-nodeify": "^10.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "react-native": {
+    "crypto": "react-native-crypto",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "vm": "vm-browserify"
+  },
+  "browser": {
+    "crypto": "react-native-crypto",
+    "_stream_transform": "readable-stream/transform",
+    "_stream_readable": "readable-stream/readable",
+    "_stream_writable": "readable-stream/writable",
+    "_stream_duplex": "readable-stream/duplex",
+    "_stream_passthrough": "readable-stream/passthrough",
+    "stream": "stream-browserify",
+    "vm": "vm-browserify"
+  }
+}
